@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página de Inicio - Proyecto Desplegable</title>
+  <style>
+    /* ==== ESTILOS GENERALES ==== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0a0a23, #1a73e8, #00bcd4);
+      color: #fff;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.3);
+      text-align: center;
+      padding: 30px 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #00e6ff;
+      text-transform: uppercase;
+    }
+
+    header p {
+      font-size: 1.1em;
+      margin-top: 10px;
+      color: #dcdcdc;
+    }
+
+    /* ==== SECCIÓN PRINCIPAL ==== */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 0 auto 40px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      background: #00e6ff;
+      color: #000;
+      font-weight: 700;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: #fff;
+      color: #1a73e8;
+      transform: scale(1.05);
+    }
+
+    /* ==== SECCIÓN DESTACADOS ==== */
+    .features {
+      background: rgba(255,255,255,0.05);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .features h3 {
+      font-size: 2em;
+      margin-bottom: 40px;
+      color: #00e6ff;
+    }
+
+    .feature-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .feature {
+      background: rgba(255,255,255,0.1);
+      border-radius: 15px;
+      padding: 25px;
+      width: 280px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+    }
+
+    .feature h4 {
+      color: #00e6ff;
+      margin-bottom: 10px;
+      font-size: 1.3em;
+    }
+
+    .feature p {
+      font-size: 1em;
+      color: #eaeaea;
+      line-height: 1.5;
+    }
+
+    /* ==== SECCIÓN FINAL ==== */
+    footer {
+      background: rgba(0,0,0,0.6);
+      text-align: center;
+      padding: 25px;
+      font-size: 0.9em;
+      color: #ccc;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #00e6ff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ==== ANIMACIONES ==== */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Proyecto Desplegable 🚀</h1>
+    <p>Aplicación web desplegada con GitHub y Render</p>
+  </header>
+
+  <section class="hero">
+    <h2>¡Bienvenido a tu nueva página!</h2>
+    <p>
+      Esta página fue creada a partir de tu proyecto base en Node.js, aprovechando el mismo despliegue en Render.
+      Aquí podrás mostrar información, realizar pruebas visuales o simplemente practicar la integración de contenido web.
+    </p>
+    <a href="/" class="btn">Volver al inicio</a>
+  </section>
+
+  <section class="features">
+    <h3>Características Destacadas 💡</h3>
+    <div class="feature-container">
+      <div class="feature">
+        <h4>🚀 Despliegue Instantáneo</h4>
+        <p>Gracias a Render, cualquier cambio que subas con Git se refleja automáticamente en la aplicación.</p>
+      </div>
+      <div class="feature">
+        <h4>🔐 Seguridad</h4>
+        <p>Variables protegidas mediante `.env` y configuraciones seguras para mantener tus datos privados.</p>
+      </div>
+      <div class="feature">
+        <h4>⚙️ Simplicidad</h4>
+        <p>Construido con Node.js puro, sin frameworks pesados, lo que facilita entender cada parte del proceso.</p>
+      </div>
+      <div class="feature">
+        <h4>🌎 Escalabilidad</h4>
+        <p>Preparado para crecer y añadir nuevas rutas, servicios o integraciones fácilmente.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 - Desarrollado por <strong>Derian Aaron</strong> | <a href="/">Volver al servidor principal</a></p>
+  </footer>
+</body>
+</html>
